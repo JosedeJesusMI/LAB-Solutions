@@ -1,0 +1,99 @@
+body, html{
+    height: 100%;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url('../imagen/prueba.jpg');
+    background-size: cover;
+    background-position: center center;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center ;
+    align-items: center;
+    overflow: hidden;
+}
+
+.form-box{
+    width: 300px;
+    padding: 40px;
+    background: #302f2f;
+    text-align: center;
+}
+
+.form-title{
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.form-box input[type="text"],
+.form-box input[type="password"],
+.form-box input[type="submit"]{
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    padding: 14px 10px;
+    text-align: center;
+    border: 2px solid #0059ce;
+    width: 200px;
+    outline: none;
+    color: rgb(224, 224, 224);
+    border-radius: 24px;
+    transition: 0.25s;
+}
+
+.form-box input[type="text"]:focus,
+.form-box input[type="password"]:focus{
+    width: 280px;
+    border-color: #0059ce;
+}
+
+.form-box input[type="submit"]{
+    border: 0;
+    background: #014399;
+    cursor: grabbing;
+    border: 2px solid #0059ce;
+}
+
+.form-box input[type="submit"]:hover{
+    background: none;
+}
+
+.imagen{
+    width: 100px;
+    height: 100px;
+    border-radius: 90%;
+}
+
+.info, .correcto, .ojo, .error, .validation {
+    border: 1px solid;
+    margin: 10px 0px;
+    padding:15px 40px 15px 50px;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:13px;
+    text-align:center;
+    width:auto;
+}
+.info {
+    color: #00529B;
+    background-color: #BDE5F8;
+}
+.correcto {
+    color: #4F8A10;
+    background-color: #DFF2BF;
+}
+.ojo {
+    color: #9F6000;
+    background-color: #FEEFB3;
+}
+.error {
+    color: #D8000C;
+    background-color: #FFBABA;
+}
